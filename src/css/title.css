@@ -1,0 +1,48 @@
+#title {
+  width: var(--max-vw);
+  height: var(--title-vh);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1.3rem;
+  font-family: 'Siracha', Arial, Helvetica, sans-serif;;
+  background-color: var(--dark);
+  color: var(--pink);
+  margin: 0;
+}
+
+@media screen and (min-width: 700px) {
+
+  #title {
+    font-size: 1.5rem;
+    height: fit-content;
+  }
+}
+
+/* TITLE
+**
+** Definieras som CSS ID, eftersom elementet ska refereras från JavaScript
+**
+** width: [värde] - sätt bredden på elementet till det angivna värdet till höger
+** --max-vw anges i root.css filen under :root
+** vw står för view port width, det vill säga bredden på webbläsarens synliga fält
+** height: --title-vh - sätt höjden till --title-vh (anges med vh måttet i root.css filen under :root)
+** vh syftar på view port height - höjden på webbläsarens synliga fält
+** height: fit-content - anpassa höjden till innehållet
+** display: flex - gör container flexibel/responsiv (justerar innehållet automatiskt)
+** justify-content: center - centrera containerns innehåll horisontellt
+** align-items: center - centrera containerns innehåll vertikalt
+** font-size: 1.3rem - sätt textstorleken till 1.3 delar av standardstorleken för text som
+** anges i root.css under :root
+** margin: 0 - ta bort marginalerna
+** font-family: [namnet på teckensnittet], Arial, Helvetica, sans-serif - 
+** Använd det angivna teckensnittet [namnet på teckensnittet] (finns definierat i root.css filen under :root)
+** Om detta misslyckas, försök använda Arial, sedan Helvetica, sedan vilket teckensnitt som helst av typen
+** sans-serif som finns på enheten
+** color: [värdet] - sätt textfärgen till det angivna värdet till höger
+** background-color: [värdet] - sätt bakgrundsfärgen till det angivna värdet till höger
+** Variablerna --pink, --dark definieras i root.css filen
+** @media screen and (min-width: 700px) {} - CSS reglerna gäller enbart för alla skärmar 
+** där bredden är lika med minst 700 pixlar (gäller desktop, tablets samt mobiler i liggande orientering)
+*/

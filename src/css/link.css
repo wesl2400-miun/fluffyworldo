@@ -1,0 +1,27 @@
+.link, .link:visited {
+  color: var(--pink);
+  font-family: 'IBM-Regular', Arial, Helvetica, sans-serif;;
+}
+
+.link:active {
+  color: var(--gray);
+}
+
+.link:hover {
+  color: var(--mute-pink);
+}
+
+/* LINK
+**
+** Definieras som CSS klass
+** color: [värdet] - sätt textfärgen till det angivna värdet till höger
+** variablerna --pink, --gray, --mute-pink finns definierade i root.css filen under :root
+** font-family: [namnet på teckensnittet], Arial, Helvetica, sans-serif -
+** Använd det angivna teckensnittet [namnet på teckensnittet] (finns definierat i root.css filen under :root)
+** Om detta misslyckas, försök använda Arial, sedan Helvetica, sedan vilket teckensnitt som helst av typen
+** sans-serif som finns på enheten
+** .link, .link:visited {} - CSS reglerna gäller alla element definierade med .link klassen plus alla
+** element definierade med .link klassen som är besökta (har redan klickats på)
+** .link:active  {}- CSS reglerna gäller alla element definierade med .link klassen som pressas
+** .link:hover {} - CSS reglerna gäller alla element definierade med .link klassen som musmarkören pekar på
+*/

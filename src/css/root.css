@@ -1,0 +1,99 @@
+@font-face {
+  font-family: 'IBM-Light';
+  src: url('../fonts/ibm_light.ttf');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IBM-Regular';
+  src: url('../fonts/ibm_regular.ttf');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IBM-Italic';
+  src: url('../fonts/ibm_italic.ttf');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IBM-Bold';
+  src: url('../fonts/ibm_bold.ttf');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Siracha';
+  src: url('../fonts/siracha.ttf');
+  font-display: swap;
+}
+
+:root {
+  font-family: 'IBM-Light', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-synthesis: none; 
+  -webkit-font-smoothing: antialiased; 
+  -moz-osx-font-smoothing: grayscale;
+  --deep-pink: #FFB6B6;
+  --pink: #FFD4D4; 
+  --light-pink: #FFECEC;
+  --mute-pink: #e0b1b9;
+  --gray: #D3D3D3;
+  --light-gray: #F0F0F0;
+  --darkish: #585858;
+  --dark: #414141;
+  --deep-dark: #333333;
+  --max-vw: 100vw;
+  --max-vh: 100vh;
+  --title-vh: 5vh;
+}
+
+body {
+  width: var(--max-vw);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  background-color: var(--darkish);
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* ROOT
+**
+** @font-face {} - specificerar ett teckensnitt, font-family är namnet på fonten (valfritt)
+** och src anger mappen där fonten finns
+** :root {} - CSS reglerna gäller hela HTML dokumentet
+** body {} - gäller hela taggen
+** ul {} - gäller alla element av typen 'ul' (oordnad lista)
+**
+** font-display: swap - byt temporärt det angivna teckensnittet mot dess alternativ 
+** (Arial, Helvetica, snas-serif) för prestandas skull (så att återgivningen av webbsidan inte blockeras)
+** -webkit-font-smoothing: antialiased - gör texten finare på Mac enheterna (jämna ut teckensnitt)
+** -moz-osx-font-smoothing: grayscale - gör texten finare i FireFox webbläsare
+** --[variabel] - specifierar konstanta variabler som återanvänds i flera CSS filer
+** font-synthesis: none - hindra webbläsaren från att återge fetstil och kursiv i fall 
+** teckensnittet inte har sådana stilar. Viktigt om texten översätts till exempelvis kinesiska eller 
+** andra skrift som saknar fetstil och kursiv. Om webbläsaren försöker skapa syntetiskt sådana stilar
+** för liknande språk, kan det hända att textens mening förvrängs
+** :root { font-size: 16px } - ange 16 pixlar som standard storleken på teckesnitt, rem-värdet kommer
+** sedan räknas baserat på detta värde
+** :root { font-family: [namnet på teckensnittet], Arial, Helvetica, sans-serif } - 
+** Använd det angivna teckensnittet [namnet på teckensnittet] som definieras med @font-face
+** Om detta misslyckas, försök använda Arial, sedan Helvetica, sedan vilket teckensnitt som helst av typen
+** sans-serif som finns på enheten
+** IBM-Light används som standardteckensnittet för hela dokumentet
+* list-style: none - ta bort kullpunkterna från alla listor
+** justify-content: center - centrera containerns innehåll horisontellt
+** align-items: center - centrera containerns innehåll vertikalt
+** flex-direction: column - stapla elementen inuti containern på varandra i en kolumn
+** background-color: var(--darkish) - sätt bakgrundfärgen till variabeln --darkish
+** margin: 0 - ta bort marginalerna
+** padding: 0 - ta bort utrymmet runt innehållet
+*/

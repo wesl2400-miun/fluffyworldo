@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>/</loc>
+    <lastmod>2025-09-21</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>/about.html</loc>
+    <lastmod>2025-09-21</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>/news.html</loc>
+    <lastmod>2025-09-21</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>/policy.html</loc>
+    <lastmod>2025-09-21</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>/shop.html</loc>
+    <lastmod>2025-09-21</lastmod>
+    <priority>0.9</priority>
+  </url>
+</urlset>
+
+<!-- SITEMAP
+** (Viktigt!) Denna fil finns till för att förbättra sökomotorsoptimeringen (SEO). Filen hjälper sökrobotar
+** att söka igenom undersidorna på ett mer effektivt sätt. Ordet 'sitemap' syftar på webbsidans sidostruktur.
+**
+** <?xml version="1.0" encoding="UTF-8"?> - Säg till webbläsare att denna fil är en xml fil version 1.0,
+** och säg till de att använda teckensnittskodningen UTF-8 som omfattar tecken och symboler från
+** världen all språk
+** <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> - Tolka denna filen 
+** enligt www.sitemaps.org standarden, <urlset> definierar en uppsättning av url addresser som ska genomsökas
+** <url> - specificera en sida som är en del av webbsidans 'sitemap' (sidostruktur) 
+** enligt www.sitemaps org standarden
+** <loc> - syftar på sidan absoluta sökväg/address på internet
+** <lastmod> - senast uppdaterad
+** <priority> - syftar på hur viktig en sida är 
+** jämfört med andra sidor i skala från 0.0 (minst viktig) till 1.0 (viktigast) när den genomsöks
+** av robotar
+-->

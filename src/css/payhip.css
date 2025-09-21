@@ -1,0 +1,30 @@
+body {
+  width: var(--max-vw);
+  height: fit-content;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  margin: 1rem 10rem;
+  padding: 1rem 10rem;
+  background-color: white;
+  text-align: start;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* BODY
+**
+** CSS reglerna gäller alla element inuti body taggen
+**
+** width: var(--max-vw) - sätt bredden till variabelns --max-vw (finns definierad i root.css filen)
+** display: flex - gör container flexibel/responsiv (justerar innehållet automatiskt)
+** justify-content: [värdet] - centrera containerns innehåll horisontellt
+** align-items: center - centrera containerns innehåll vertikalt
+** flex-direction: column - stapla elementen inuti containern på varandra i en kolumn
+** margin: 1rem 10rem - sätt marginalerna till 1rem vertikalt och 10 rem horisontellt
+** padding: 1rem 10rem - lägg till 1rem av extra utrymme kring innehållet vertikalt och 10rem horisontellt
+** background-color: white - sätt bakgrundsfärgen till 'white'
+** text-align: start - placera texten till vänster
+** font-family: Arial, Helvetica, sans-serif - försök sätta teckensittet till Arial, sedan Helvetica och sedan 
+** till vilket teckensnitt som helst av typen sans-serif som finns på enheten - i fall varje försök misslyckas
+*/

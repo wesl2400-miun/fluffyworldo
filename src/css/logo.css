@@ -1,0 +1,51 @@
+.header {
+  width: var(--max-vw);
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light-pink);
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.logo {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 700px) {
+
+  .header {
+    height: 25vh;
+  }
+
+  .logo {
+    height: 25vh;;
+  }
+}
+
+/* LOGO
+** width: [värde] - sätt bredden på elementet till det angivna värdet till höger
+** --max-vw är en variabeln som anges i vw (view port width = bredden på webbläsarens synliga fält) och
+** finns definierad i root.css filen
+** Värdet 100% innebär att elementet ska ta 100% av sitt föräldraelementets bredd i width kontexten
+** height: [värde] - sätt höjden på elementet till det angivna värdet till höger
+** vh står för höjden på webbläsarens synliga fält, anges i procent,
+** till exempel 10vh = 10% av höjden på det synliga fältet
+** Värdet 100% innebär att elementet ska ta 100% av sitt föräldraelementets höjd i height kontexten
+** display: flex - gör container flexibel/responsiv (justerar innehållet automatiskt)
+** justify-content: center - centrera containerns innehåll horisontellt
+** align-items: center - centrera containerns innehåll vertikalt
+** padding: [värde] - sätt utrymmet kring innehållet till det angivna värdet till höger
+** background-color:  [värde] - sätt bakgrundsfärgen till det angivna värdet till höger
+** --light-pink variabeln finns definierad i root.css filen under :root
+** box-sizing: border-box - se till atta hela elementets utrymme fram till dess gränsyta används
+** attributet content-box använder bara innehållsutrymmet och inkludrar inte utrymmet vid gränsytan
+** @media screen and (min-width: 700px) {} - CSS reglerna gäller enbart för alla skärmar 
+** där bredden är lika med minst 700 pixlar (gäller desktop, tablets samt mobiler i liggande orientering)
+*/

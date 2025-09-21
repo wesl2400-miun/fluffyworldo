@@ -1,0 +1,70 @@
+.card-list {
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.card-list li {
+  color: var(--darkish);
+  background-color: var(--light-gray);
+  box-shadow: 3px 3px 3px var(--dark);
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.card-list p {
+  display: block;
+  box-sizing: border-box;
+  font-family: 'IBM-Regular', Arial, Helvetica, sans-serif;
+  padding: 1rem;
+  margin: 0;
+  display: block;
+  box-sizing: border-box;
+}
+
+.card-list h2 {
+  font-family: 'IBM-Bold', Arial, Helvetica, sans-serif;;
+  font-size: 1.2rem;
+  padding: 0.5rem 0;
+  margin: 0;
+  display: block;
+  box-sizing: border-box;
+}
+
+/* CARD-LIST
+*
+** Definieras som en CSS klass med prick-prefixet
+** width: 50vw - sätt elementets bredd till 50% av webbläsarens synliga fält
+** display: flex - gör container flexibel/responsiv (justerar innehållet automatiskt)
+** justify-content: center - centrera containerns innehåll horisontellt
+** align-items: center - centrera containerns innehåll vertikalt
+** flex-direction: column - stapla elementen inuti containern på varandra i en kolumn
+** gap: 0.5rem - lägg till extra utrymme mellan containerns element (0.5 delar av standardteckensittstorleken)
+** margin-top: 0 - ta bort marginalen längs upp
+** padding: 0 - ta bort utrymmet runt innehållet 
+** margin-bottom: 2rem - sätt marginalen längs ner till 2rem
+** color: [värde] - sätt textfärgen till det angivan värdet till höger
+** background-color:  [värde] - sätt bakgrundsfärgen till det angivna värdet till höger
+** box-shadow: 3px 3px 3px var(--dark) - lägg till skuggan kring containern (--dark är färgen på skuggan)
+** text-align: center - centrera texten
+** padding: [värde] - sätt utrymmet kring innehållet till det angivna värdet till höger
+** margin: [värde] [värde] - sätt marginalerna till de angivna värdena till höger 
+** (första värdet appliceras vertikalt, andra värdet appliceras horisontellt)
+** display: block - presentera elementet som ett icke reponsivt innehållsblock
+** box-sizing: border-box - se till atta hela elementets utrymme fram till dess gränsyta används
+** attributet content-box använder bara innehållsutrymmet och inkludrar inte utrymmet vid gränsytan
+** font-family: [namnet på teckensnittet], Arial, Helvetica, sans-serif - 
+** Använd det angivna teckensnittet [namnet på teckensnittet] (finns definierat i root.css filen under :root)
+** Om detta misslyckas, försök använda Arial, sedan Helvetica, sedan vilket teckensnitt som helst av typen
+** sans-serif som finns på enheten
+** .card-list li {} - CSS reglerna gäller alla element av typen 'li' (list item) inuti containern
+** .card-list p {} - CSS reglerna gäller alla element av typen 'p' (paragraph) inuti containern
+** .card-list h2 {} - CSS reglerna gäller alla element av typen 'h2' (andra gradens header) inuti containern
+*/

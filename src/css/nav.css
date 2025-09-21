@@ -1,0 +1,162 @@
+.nav {
+  width: var(--max-vw);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+#menu {
+  width: var(--max-vw);
+  height: 5vh;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: var(--pink);
+}
+
+#menu button {
+  height: 5vh;
+  border: none;
+  background-color: var(--pink);
+}
+
+#menu img {
+  height: 80%;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+#routes {
+  width: var(--max-vw);
+  height: 100vh;
+  display: none;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--dark);
+  overflow: hidden;
+  padding-bottom: 5rem;
+}
+
+.route {
+  width: var(--max-vw);
+  border-bottom: 1px var(--darkish) solid;
+  text-align: center;
+  font-family: 'IBM-Bold', Arial, Helvetica, sans-serif;;
+}
+
+.route a {
+  width: var(--max-vw);
+  display: block;
+  box-sizing: border-box;
+  padding: 0.5rem;
+  color: var(--light-pink);
+  text-decoration: none;
+}
+
+.route a:hover {
+  background-color: var(--light-pink);
+  color: var(--darkish);
+}
+
+.route a:active {
+  color: var(--mute-pink);
+}
+
+.route .selected {
+  background-color: var(--deep-dark);
+  color: var(--pink);
+}
+
+@media screen and (min-width: 700px) {
+
+  #menu {
+    display: none;
+  }
+
+  #routes {
+    height: 2rem;
+    font-size: 1.2rem;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: var(--pink);
+  }
+
+  .route {
+    width: fit-content;
+    height: 2rem;
+    line-height: 2rem;
+    border-bottom: none;
+  }
+
+  .route a {
+    width: fit-content;
+    height: 2rem;
+    padding: 0 1.5rem;
+    text-decoration: none;
+    color: var(--dark);
+  }
+}
+
+/* NAV
+**
+** #menu och #routes definieras som CSS ID eftersom de ska refereras från JavaScript
+**
+** width: [värde] - sätt bredden på elementet till det angivna värdet till höger
+** --max-vw är en variabeln som anges i vw (view port width = bredden på webbläsarens synliga fält) och
+** finns definierad i root.css filen
+** width: fit-content - anpassa bredden till innehållet
+** height: [värde] - sätt höjden på elementet till det angivna värdet till höger
+** anges i vh (höjden på webbläsarens synliga fält)
+** display: flex - gör container flexibel/responsiv (justerar innehållet automatiskt)
+** justify-content: [värdet] - placera containerns innehåll horisontellt
+** center = centralt eller start = i början av det synliga fältet
+** align-items: center - placera containerns innehåll vertikalt
+** center = centralt eller start = i början av det synliga fältet
+** flex-direction: column - stapla elementen inuti containern på varandra i en kolumn
+** flex-direction: row - lägg elementen vid sidan av varandra i en rad
+** text-align: center - centrera texten
+** box-sizing: border-box - se till atta hela elementets utrymme fram till dess gränsyta används
+** attributet content-box använder bara innehållsutrymmet och inkludrar inte utrymmet vid gränsytan
+** color: [värdet] - sätt textfärgen till det angivna värdet till höger
+** background-color: [värdet] - sätt bakgrundsfärg till det angivna värdet till höger
+** variablerna --pink, --dark, --darkish et cetera finns definierade i root.css filen under :root
+** user-select: none - hindra användare från att markera texten
+** border: none - ta bort inramningen
+** padding: [värde] - sätt utrymmet kring innehållet till det angivna värdet till höger
+** anges i rem, delar av standardtextstorleken, till exempel 0.5rem är 0.5 delar av standartextstorleken
+** som anges i root.css under :root
+** margin: [värde] - sätt marginalerna till det angivna värdet till höger 
+** cursor: pointer - använd musmarkören av typen 'pointer'
+** display: none - dölj elementet
+** overflow: hidden - dölj innehållet om det inte matchar höjden på containern
+** border-bottom: 1px var(--darkish) solid - lägg till inramningen längs ner
+** 1px tjock, färgen ska vara 'darkish' och jämn (icke streckad)
+** Använd det angivna teckensnittet [namnet på teckensnittet] (finns definierat i root.css filen under :root)
+** Om detta misslyckas, försök använda Arial, sedan Helvetica, sedan vilket teckensnitt som helst av typen
+** sans-serif som finns på enheten
+** display: block - visa elementet som ett icke responsivt innehållsblock
+** text-decoration: none - ta bort understrecket från texten
+** #menu button {} - CSS reglerna gäller alla knappar inuti elementet #menu
+** #menu img {} - CSS reglerna gäller alla 'img' taggar inuti elementet #menu
+** .route a {} - CSS reglerna gäller alla 'a' taggar inuti elementet #menu
+** .route a:hover {} - CSS reglerna gäller alla 'a' taggar inuti elementet #menu
+** som pekas med musmarkören
+** .route a:active {} - CSS reglerna gäller alla 'a' taggar inuti elementet #menu
+** som pressas
+** .route .selected {} - CSS reglerna gäller alla element inuti elementet #menu
+** som definieras med klassen .selected
+** @media screen and (min-width: 700px) {} - CSS reglerna gäller enbart för alla skärmar 
+** där bredden är lika med minst 700 pixlar (gäller desktop, tablets samt mobiler i liggande orientering)
+*/

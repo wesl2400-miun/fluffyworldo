@@ -1,0 +1,53 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: var(--max-vw);
+  height: 7vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: var(--gray);
+  font-family: 'IBM-Italic', Arial, Helvetica, sans-serif;;
+  font-size: 0.8rem;
+  padding: 0;
+}
+
+@media screen and (min-width: 700px) {
+
+  .footer {
+    height: 9vh;
+    font-size: 1rem;
+  }
+}
+
+/* FOOTER
+**
+** Definieras som CSS ID med hashtag prefixet, eftersom elementet ska refereras från JavaScript
+** position: fixed - fäst conatiner vid samma position i webbläsarens synliga fält
+** bottom: 0 - placera containern längs ner
+** width: [värde] - sätt bredden på elementet till det angivna värdet till höger
+** --max-vw är en variabeln som anges i vw (view port width = bredden på webbläsarens synliga fält) och
+** finns definierad i root.css filen
+** height: [värde] - sätt höjden på elementet till det angivna värdet till höger
+** anges i vh (höjden på webbläsarens synliga fält)
+** display: flex - gör container flexibel/responsiv (justerar innehållet automatiskt)
+** justify-content: center - centrera containerns innehåll horisontellt
+** align-items: center - centrera containerns innehåll vertikalt
+** flex-direction: column - stapla elementen inuti containern på varandra i en kolumn
+** text-align: center - centrera texten
+** box-sizing: border-box - se till atta hela elementets utrymme fram till dess gränsyta används
+** attributet content-box använder bara innehållsutrymmet och inkludrar inte utrymmet vid gränsytan
+** background-color: [värdet] - sätt bakgrundsfärg till det angivna värdet till höger
+** variabeln --gray definieras i root.css under :root
+** font-family: [namnet på teckensnittet], Arial, Helvetica, sans-serif - 
+** Använd det angivna teckensnittet [namnet på teckensnittet] (finns definierat i root.css filen under :root)
+** Om detta misslyckas, försök använda Arial, sedan Helvetica, sedan vilket teckensnitt som helst av typen
+** sans-serif som finns på enheten
+** font-size: 0.8rem - sätt teckensnittsstorleken till 0.8 av standardteckensnittsstorleken
+** padding: 0 - ta bort utrymmet runt innehållet
+** @media screen and (min-width: 700px) {} - CSS reglerna gäller enbart för alla skärmar 
+** där bredden är lika med minst 700 pixlar (gäller desktop, tablets samt mobiler i liggande orientering)
+*/

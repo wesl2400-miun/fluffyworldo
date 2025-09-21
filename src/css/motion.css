@@ -1,0 +1,27 @@
+@keyframes expand {
+  from {
+    height: var(--title-vh);
+  }
+  to {
+    height: var(--max-vh);
+  }
+}
+
+@keyframes hide {
+  from {
+    height: var(--max-vh);
+  }
+  to {
+    height: var(--title-vh);
+  }
+}
+
+/* CSS ANIMATIONER
+**
+** Dessa animationer ska spelas dynamiskt när menyn (trestrecks ikonen) i navigationsfältet pressas
+** Animationerna tilldelas dynamiskt via JavaScript i menu.js filen
+** expand - from height to height - ök höjden från höjden på titeln till den maximala höjden
+** på webbläsarens synliga fält
+** hide - from height to height - sänk höjden från den maximala höjden
+** på webbläsarens synliga fält till titelns höjd
+*/

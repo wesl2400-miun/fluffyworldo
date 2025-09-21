@@ -1,0 +1,58 @@
+.button {
+  width: 85vw;
+  height: 2rem;
+  line-height: 2rem;
+  display: block;
+  box-sizing: border-box;
+  color: var(--dark);
+  background-color: var(--deep-pink);
+  font-size: 0.9rem;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 0;
+  margin: auto;
+  font-family: 'IBM-Bold', Arial, Helvetica, sans-serif;
+}
+
+.button:hover {
+  background-color: var(--mute-pink);
+}
+
+.button:active {
+  background-color: var(--gray);
+}
+
+@media screen and (min-width: 700px) {
+
+  .button {
+    width: 45vw;
+    font-size: 1.3rem;
+  }
+}
+
+/* BUTTON
+** Definieras som CSS klass med prick-prefixet 
+** width: 85vw - sätt bredden på elementet till 85% av webbläsarens synliga fält
+** height: 2rem - sätt höjden på elementet till 2.0 delar av satndardteckenstorleken (anges i root.css filen)
+** line-height: 2rem - sätt teckensnittshöjden till 2rem (se ovan för mer info)
+** display: block - visa elemntet som ett block (icke responsivt innehålsstycke)
+** button elementet ska ingå i en responsiv containern och ska ändå justeras automatiskt
+** box-sizing: border-box - se till atta hela elementets utrymme fram till dess gränsyta används
+** attributet content-box använder bara innehållsutrymmet och inkludrar inte utrymmet vid gränsytan
+** color: var(--dark) - sätt textfärgen till variabeln --dark (anges i root.css filen)
+** background-color: var(--deep-pink) - sätt bakgrundsfärgen till variabeln --deep-pink (anges i root.css filen)
+** font-size: 0.9rem - sätt teckensnittsstorleken till 0.9 av standardteckensnittsstorleken
+** text-align: center - centrera texten
+** text-decoration: none - ta bort understrecket
+** border-radius: 5px - runda alla hörn på containern med 5 pixlar
+** padding: 0 - ta bort utrymmet runt innehållet
+** margin: auto - anpassa marginalerna dynamiskt
+** font-family: 'IBM-Bold', Arial, Helvetica, sans-serif - Använd teckensnittet 'IBM-Bold' (anges i root.css filen)
+** Om detta misslyckas, försök använda Arial, sedan Helvetica, sedan vilket teckensnitt som helst av typen
+** sans-serif som finns på enheten
+** .button:hover {} - CSS reglerna gäller enbart när musmarkören pekar på elementet
+** .button:active {} - CSS reglerna gäller enbart när elementet pressas
+** @media screen and (min-width: 700px) {} - CSS reglerna gäller enbart för alla skärmar 
+** där bredden är lika med minst 700 pixlar (gäller desktop, tablets samt mobiler i liggande orientering)
+*/

@@ -1,0 +1,61 @@
+#main {
+  width: var(--max-vw);
+  height: fit-content;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 5rem;
+  color: var(--light-pink);
+}
+
+#main h2 {
+  padding: 0;
+  margin: 0;
+  font-family: 'IBM-Bold', Arial, Helvetica, sans-serif;;
+  font-size: 1.3rem;
+}
+
+#main p {
+  padding: 1rem 0;
+  margin: 0;
+}
+
+@media screen and (min-width: 700px) {
+
+  #main {
+    font-size: 1.1rem;
+  }
+}
+
+/* MAIN
+** Definieras som CSS ID med hashtag prefixet, eftersom elementet ska refereras från JavaScript
+** width: [värde] - sätt bredden på elementet till det angivna värdet till höger
+** --max-vw är en variabeln som anges i vw (view port width = bredden på webbläsarens synliga fält) och
+** finns definierad i root.css filen
+** height: fit-content - anpassa höjden till innehållet
+** display: flex - gör container flexibel/responsiv (justerar innehållet automatiskt)
+** justify-content: center - centrera containerns innehåll horisontellt
+** align-items: center - centrera containerns innehåll vertikalt
+** text-align: center: centrera texten
+** flex-direction: column - stapla elementen inuti containern på varandra i en kolumn
+** color: [värde] - sätt textfärgen till det angivan värdet till höger
+** Variablerna --light-pink och --mute-pink är definierade i root.css filen under :root
+** padding: [värde] - sätt utrymmet kring innehållet till det angivna värdet till höger
+** margin: [värde] - sätt marginalerna till det angivna värdet till höger
+** margin-bottom: 5rem - sätt nedre marginalen till 5 rem (5.0 delar av standardstorleken på texten)
+** font-family: [namnet på teckensnittet], Arial, Helvetica, sans-serif - 
+** Använd det angivna teckensnittet [namnet på teckensnittet] (finns definierat i root.css filen under :root)
+** Om detta misslyckas, försök använda Arial, sedan Helvetica, sedan vilket teckensnitt som helst av typen
+** sans-serif som finns på enheten
+** font-size: [värde] - sätt teckensnittsstorleken till det angivna värdet till höger
+** Anges i rem och innebär att storleken ska vara ett antal delar av standardteckensnittstorleken som
+** finns definierad i root.css under :root, till exempel 0.5 rem är 0.5 delar av standardstorleken på texten
+**  #main h2 {} - CSS reglerna gäller alla taggar av typen 'h2' 
+** (andragradens header) som inkluderas av #main containern
+**  #main p {} - CSS reglerna gäller alla taggar av typen 'p' 
+** (paragraf) som inkluderas av #main containern
+** @media screen and (min-width: 700px) {} - CSS reglerna gäller enbart för alla skärmar 
+** där bredden är lika med minst 700 pixlar (gäller desktop, tablets samt mobiler i liggande orientering)
+*/
