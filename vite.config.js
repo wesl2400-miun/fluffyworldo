@@ -23,7 +23,7 @@ import { defineConfig } from 'vite';
 import { resolve } from 'path';
 
 export default defineConfig({
-  base: 'https://github.com/wesl2400-miun/fluffyworldo',
+  base: '/fluffyworldo/',
   build: {
     rollupOptions: {
       input: {
