@@ -5,11 +5,18 @@ body {
   justify-content: start;
   align-items: start;
   flex-direction: column;
-  margin: 1rem 10rem;
-  padding: 1rem 10rem;
+  margin: 1rem;
+  padding: 1rem;
   background-color: white;
   text-align: start;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    margin: 1rem 10rem;
+    padding: 1rem 10rem;
+  }
 }
 
 /* BODY
@@ -27,4 +34,6 @@ body {
 ** text-align: start - placera texten till vänster
 ** font-family: Arial, Helvetica, sans-serif - försök sätta teckensittet till Arial, sedan Helvetica och sedan 
 ** till vilket teckensnitt som helst av typen sans-serif som finns på enheten - i fall varje försök misslyckas
+** @media screen and (min-width: 1000px) {} - CSS reglerna gäller enbart för alla skärmar 
+** där bredden är lika med minst 1000 pixlar (gäller desktop, tablets samt mobiler i liggande orientering)
 */
