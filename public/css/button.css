@@ -1,5 +1,5 @@
 .button {
-  width: 85vw;
+  width: 100%;
   height: 2rem;
   line-height: 2rem;
   display: block;
@@ -26,14 +26,13 @@
 @media screen and (min-width: 700px) {
 
   .button {
-    width: 45vw;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 }
 
 /* BUTTON
 ** Definieras som CSS klass med prick-prefixet 
-** width: 85vw - sätt bredden på elementet till 85% av webbläsarens synliga fält
+** width: 100% - sätt bredden på elementet till 100% av föräldraelementets bredd
 ** height: 2rem - sätt höjden på elementet till 2.0 delar av satndardteckenstorleken (anges i root.css filen)
 ** line-height: 2rem - sätt teckensnittshöjden till 2rem (se ovan för mer info)
 ** display: block - visa elemntet som ett block (icke responsivt innehålsstycke)

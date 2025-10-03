@@ -25,6 +25,7 @@
 @media screen and (min-width: 700px) {
 
   #main {
+    width: 60%;
     font-size: 1.1rem;
   }
 }
@@ -58,4 +59,5 @@
 ** (paragraf) som inkluderas av #main containern
 ** @media screen and (min-width: 700px) {} - CSS reglerna gäller enbart för alla skärmar 
 ** där bredden är lika med minst 700 pixlar (gäller desktop, tablets samt mobiler i liggande orientering)
+** width: 60% - sätt bredden till 60% av förädraelementets bredd
 */

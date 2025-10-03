@@ -3,18 +3,11 @@
   justify-content: start;
   align-items: center;
   flex-direction: column;
-  width: 90vw;
+  width: 90%;
   height: fit-content;
   padding: 0;
   margin-top: 0.5rem;
   margin-bottom: 3rem;
-}
-
-@media screen and (min-width: 700px) {
-
-  .section {
-    width: 50vw;
-  }
 }
 
 /* SECTION
@@ -22,8 +15,7 @@
 ** Definieras som CSS klass
 **
 ** width: [värde] - sätt bredden på elementet till det angivna värdet till höger
-** vw står för view port width, det vill säga bredden på webbläsarens synliga fält
-** till exempel, 90vw är lika med 90% av bredden på det synliga fältet
+** i procent, vilket innebär att bredden på section är 90% av föräldraelementets bredd
 ** height: fit-content - anpassa höjden till innehållet
 ** display: flex - gör container flexibel/responsiv (justerar innehållet automatiskt)
 ** justify-content: center - centrera containerns innehåll horisontellt

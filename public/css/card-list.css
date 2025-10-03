@@ -1,5 +1,5 @@
 .card-list {
-  width: 50vw;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,7 +41,7 @@
 /* CARD-LIST
 *
 ** Definieras som en CSS klass med prick-prefixet
-** width: 50vw - sätt elementets bredd till 50% av webbläsarens synliga fält
+** width: 100% - sätt elementets bredd till 100% av föräldraelementets bredd
 ** display: flex - gör container flexibel/responsiv (justerar innehållet automatiskt)
 ** justify-content: center - centrera containerns innehåll horisontellt
 ** align-items: center - centrera containerns innehåll vertikalt
