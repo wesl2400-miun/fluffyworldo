@@ -1,3 +1,3 @@
-## Projekt 5.2 Utveckling av webbplatsen FluffyWorldo
-### Datateknik GR (A), Webbutveckling - DT057G D2095 HT2025
-FluffyWorldo är en online fantasybok som säljs i PDF format per kapitel.
+## Publiceringsversion av FluffyWorldo
+### Länken till webbplatsen https://wesl2400-miun.github.io/fluffyworldo/
+Detta är en version av FluffyWorldo som har skapats av byggverktyget Vite, med hjälp av kommandot 'npm run build'.
